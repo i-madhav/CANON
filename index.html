@@ -17,28 +17,28 @@
     <div class="relative h-full">
         <img src='public/images/banner.jpg' alt='image' />
 
-        <div class="block md:hidden pt-6 bg-white shadow-md">
-            <form id="digitizationForm"
+        <div class="block lg:hidden pt-6 bg-white shadow-md">
+            <form id="digitizationFormMobile"
                 class="flex flex-col justify-start max-h-full overflow-auto max-w-[500px] mx-auto space-y-4 p-6 border border-gray-300 rounded-xl bg-white text-[14px]">
                 <h2 class="text-center">Start your Digitization Journey today</h2>
 
                 <input type="text" placeholder="Name" class="w-full border border-gray-300 p-2 rounded" />
 
-                <input id="email" type="email" placeholder="Email" class="w-full border border-gray-300 p-2 rounded" />
-                <p id="emailError" class="text-red-500 text-sm" style="display: none;"></p>
+                <input id="emailMobile" type="email" placeholder="Email" class="w-full border border-gray-300 p-2 rounded" />
+                <p id="emailErrorMobile" class="text-red-500 text-sm" style="display: none;"></p>
 
                 <div class="relative flex items-center">
                     <div class="absolute left-3 text-gray-500">+91</div>
-                    <input id="mobile" type="tel" placeholder="Mobile Number"
+                    <input id="mobileMobile" type="tel" placeholder="Mobile Number"
                         class="w-full border border-gray-300 p-2 pl-10 rounded" />
                 </div>
-                <p id="mobileError" class="text-red-500 text-sm" style="display: none;"></p>
+                <p id="mobileErrorMobile" class="text-red-500 text-sm" style="display: none;"></p>
 
                 <div class="flex space-x-2">
-                    <select id="state" class="w-1/2 border border-gray-300 p-2 rounded">
+                    <select id="stateMobile" class="w-1/2 border border-gray-300 p-2 rounded">
                         <option>Select State</option>
                     </select>
-                    <select id="city" class="w-1/2 border border-gray-300 p-2 rounded">
+                    <select id="cityMobile" class="w-1/2 border border-gray-300 p-2 rounded">
                         <option>Select City</option>
                     </select>
                 </div>
@@ -64,7 +64,7 @@
                 </div>
 
                 <div class="flex items-start">
-                    <input type="checkbox" id="consentCheckbox" class="mr-2 mt-1" />
+                    <input type="checkbox" id="consentCheckboxMobile" class="mr-2 mt-1" />
                     <p class="text-xs">
                         By providing the above information, I agree and accept Canon India's
                         <a href="https://in.canon/en/consumer/web/privacy" class="text-blue-500 underline">Privacy
@@ -75,7 +75,7 @@
                     </p>
                 </div>
 
-                <button id="submitBtn" type="submit" disabled
+                <button id="submitBtnMobile" type="submit" disabled
                     class="w-full p-2 rounded-2xl text-white bg-gray-400 cursor-not-allowed">
                     Submit Your Query
                 </button>
@@ -85,28 +85,28 @@
         <div
             class="hidden lg:flex fixed right-2 top-[10rem] z-50 -top-60 w-full sm:max-w-[500px] md:max-w-[400px] lg:max-w-[450px] xl:max-w-[450px] 2xl:max-w-[580px]">
             <div class="w-full h-full overflow-auto">
-                <form id="digitizationForm"
+                <form id="digitizationFormDesktop"
                     class="flex flex-col justify-start max-h-full overflow-auto max-w-[500px] mx-auto space-y-4 p-6 border border-gray-300 rounded-xl bg-white text-[14px]">
                     <h2 class="text-center">Start your Digitization Journey today</h2>
 
                     <input type="text" placeholder="Name" class="w-full border border-gray-300 p-2 rounded" />
 
-                    <input id="email" type="email" placeholder="Email"
+                    <input id="emailDesktop" type="email" placeholder="Email"
                         class="w-full border border-gray-300 p-2 rounded" />
-                    <p id="emailError" class="text-red-500 text-sm" style="display: none;"></p>
+                    <p id="emailErrorDesktop" class="text-red-500 text-sm" style="display: none;"></p>
 
                     <div class="relative flex items-center">
                         <div class="absolute left-3 text-gray-500">+91</div>
-                        <input id="mobile" type="tel" placeholder="Mobile Number"
+                        <input id="mobileDesktop" type="tel" placeholder="Mobile Number"
                             class="w-full border border-gray-300 p-2 pl-10 rounded" />
                     </div>
-                    <p id="mobileError" class="text-red-500 text-sm" style="display: none;"></p>
+                    <p id="mobileErrorDesktop" class="text-red-500 text-sm" style="display: none;"></p>
 
                     <div class="flex space-x-2">
-                        <select id="state" class="w-1/2 border border-gray-300 p-2 rounded">
+                        <select id="stateDesktop" class="w-1/2 border border-gray-300 p-2 rounded">
                             <option>Select State</option>
                         </select>
-                        <select id="city" class="w-1/2 border border-gray-300 p-2 rounded">
+                        <select id="cityDesktop" class="w-1/2 border border-gray-300 p-2 rounded">
                             <option>Select City</option>
                         </select>
                     </div>
@@ -132,7 +132,7 @@
                     </div>
 
                     <div class="flex items-start">
-                        <input type="checkbox" id="consentCheckbox" class="mr-2 mt-1" />
+                        <input type="checkbox" id="consentCheckboxDesktop" class="mr-2 mt-1" />
                         <p class="text-xs">
                             By providing the above information, I agree and accept Canon India's
                             <a href="https://in.canon/en/consumer/web/privacy" class="text-blue-500 underline">Privacy
@@ -143,7 +143,7 @@
                         </p>
                     </div>
 
-                    <button id="submitBtn" type="submit" disabled
+                    <button id="submitBtnDesktop" type="submit" disabled
                         class="w-full p-2 rounded-2xl text-white bg-gray-400 cursor-not-allowed">
                         Submit Your Query
                     </button>
@@ -151,9 +151,9 @@
             </div>
         </div>
 
-        <section class="md:w-[85%] bg-white py-12">
+        <section class=" bg-white py-12">
             <div class="flex flex-col lg:flex-row">
-                <div class="w-full lg:w-3/4 px-4 sm:px-8 md:px-12 lg:px-20 2xl:px-60">
+                <div class="w-full  lg:w-[60%] xl:w-[70%] px-4 sm:px-8 md:px-12 lg:px-20 2xl:px-60">
                     <p
                         class="text-gray-700 text-[13px] sm:text-[16px] md:text-[18px] lg:text-[20px] 2xl:text-[24px] mb-4 leading-relaxed">
                         Experience the future of document digitization with Canon scanners. Designed to deliver high
